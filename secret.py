@@ -5,5 +5,6 @@ def login():
     secret = "password123"
     data = { 'password': secret }
     headers = {'Content-Type': 'application/json'}
+    url = 'https://fake.example.local'
     session = requests.post(url, json=data, headers=headers)
     return session
